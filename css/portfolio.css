@@ -5,17 +5,26 @@
 
 /* class selector */
 .header {
-    border-top: solid 20px #019cdb;
     margin-bottom: 28px;
 }
 
 .main {
-     font-size: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    font-size: 40px;
 }
 
 .sub {
- font-size: 40px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+ font-size: 25px;
 }
+
+.sub2 {
+ font-size: 13px;
+
+}
+
 
 @media (max-width: 481px) {
      .main {
@@ -29,6 +38,10 @@
      .img-wrapper {
       width: 95%;
     }
+
+		.flex {
+			/*flex-direction: column;*/
+		}
    }
 
    @media (min-width: 481px) and (max-width:630px) {
@@ -63,14 +76,52 @@
 
 
 .main-img {
-     /*margin-top: -54px;*/
-     max-width: 100%;
+     max-width: 180px;
      height: auto;
    }
 
 
+.media-link {
+color: #000000;
+}
 
-a {
+.media-link:hover {
+	color: #48b2e8;
+}
+
+.list-style {
+	padding-top: 10px;
+	list-style-type: none
+}
+
+li  {
+padding-right: 5px;
+}
+
+.flex {
+display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+display: -ms-flexbox;  /* TWEENER - IE 10 */
+display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.flex-center {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row /* works with row or column */
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.column {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+/*a {
    color: #FFFFFF;
    font-size: 22;
    text-decoration: none;
@@ -78,7 +129,7 @@ a {
 
  a:hover {
    color: #48b2e8;
- }
+ }*/
 
 .logo {
     margin-top: 4%;
@@ -88,18 +139,13 @@ a {
 }
 
 .title {
-    color: #FFFFFF;
-    text-transform: uppercase;
+    color: #555555;
     letter-spacing: 3px;
 }
 
-.titles {
-    /*margin-top: -10%;*/
-}
-
-.img-wrapper{
+/*.img-wrapper{
      width: 70%;
-}
+}*/
 
 .footer-sub {
 
@@ -213,6 +259,7 @@ a {
       }
 
 .main-wrapper {
+		padding-top: 50px;
     min-height: calc(100vh - 126px);
 }
 
@@ -222,12 +269,8 @@ a {
     margin-bottom: 2%;
   }
 
-.flex {
-display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-align-items: center;
+.center {
+	align-items: center;
 }
 
 .input-field {
@@ -248,12 +291,7 @@ align-items: center;
     text-align: center;
 }
 
-.column {
-     flex-direction: column;
-   }
-
 body {
     font-family: 'Fira Sans', sans-serif;
-    background-color: #1F1F1F;
-    color: #FFFFFF;
+    color: #000000;
 }
