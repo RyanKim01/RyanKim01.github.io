@@ -25,7 +25,6 @@
 
 }
 
-
 @media (max-width: 481px) {
      .main {
        font-size: 25px;
@@ -121,16 +120,6 @@ display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 	flex-direction: column;
 }
 
-/*a {
-   color: #FFFFFF;
-   font-size: 22;
-   text-decoration: none;
- }
-
- a:hover {
-   color: #48b2e8;
- }*/
-
 .logo {
     margin-top: 4%;
     margin-bottom: 6%;
@@ -142,10 +131,6 @@ display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     color: #555555;
     letter-spacing: 3px;
 }
-
-/*.img-wrapper{
-     width: 70%;
-}*/
 
 .footer-sub {
 
